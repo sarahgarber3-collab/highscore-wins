@@ -1,8 +1,8 @@
-package com;
+package pluralsight;
 
 import java.util.Scanner;
 
-public class App {
+public class GameScoresApp {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
@@ -13,6 +13,7 @@ public class App {
         //Home:Visitor|score:score
         //[0    1]     [0     1]
 
+        //Declaring variables for parsing
         String [] splitInput = answer.split("\\|"); //this splits the full answer between | turning it into 2 parts
         String [] teams = splitInput[0].split(":"); //This splits part 1(teams) into two at the :
         String [] scores = splitInput[1].split(":"); //This splits part 2(scores) into two at the :
